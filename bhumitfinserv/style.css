@@ -17,6 +17,7 @@ header {
 header .logo img {
     width: 50px;
     vertical-align: middle;
+    padding: 20px;
 }
 
 header .logo h1 {
@@ -33,6 +34,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+
 }
 
 nav ul li a {
@@ -56,36 +58,23 @@ section {
     text-align: center;
 }
 
-.chooseus {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.archivements {
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    margin: 0 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+.chooseus,
 .services-container {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
-.service {
+.chooseus .archivements,
+.services-container .service {
     flex: 1;
     padding: 20px;
     background-color: #f0f0f0;
-    margin: 0 10px;
+    margin: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 #contact form {
     display: flex;
@@ -165,34 +154,63 @@ footer {
     margin: 0 33px;
 }
 
-@media (max-width: 300px) {
-    .f300{
+@media (max-width: 390px) {
+    .f300 {
         display: flex;
         flex-direction: column;
     }
-    .line{
+
+    .line {
         margin: 0;
         width: 100%;
     }
+
+    header .logo img {
+        width: 35px;
+    }
+
+    header .logo h1 {
+        font-size: 23px;
+        margin-left: -12px;
+
+    }
+
 }
-@media (min-width: 300px) and (max-width: 600px) {
-    .f600{
-        
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 10px 0;
     }
-    
-    .line{
-        margin: 0;
-        width: 100%;
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        padding: 4px 6px;
     }
-    .f300{
+
+    .chooseus,
+    .services-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chooseus .archivements {
+        width: 220px;
+    }
+
+    .services-container .service{
+        width:340px;
+    }
+    .f600 {
         display: flex;
+        flex-direction: column;
     }
-    .row{
-        flex-direction: row;
-    }
-    header .row img{
-width:40px;
-height: 40px;
-    }
+
 }
