@@ -111,12 +111,51 @@ section {
 }
 
 footer {
-    background: #e0f7fa;
+    background: #141414;
     text-align: center;
-    padding: 5px 0;
-    color: #00695c;
-    position: fixed;
-    bottom: 0;
-    height: 5%;
+    padding: 20px 0;
+    color: rgb(95, 93, 93);
     width: 100%;
 }
+
+#footer-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    word-wrap: normal;
+}
+
+.foot-logo {
+    display: flex;
+    align-items: center;
+  
+}
+
+.foot-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+.foot-section{
+    display: flex;
+    
+}
+
+.footer-sections ul li{
+    list-style: none;
+    color: aqua;
+    text-align: left;
+    padding: 5px;
+   
+}
+.footer-sections h2 {
+    color: #e0f7fa;
+}
+
+.line{
+    width: 95%;
+    height: 5px;
+    border-bottom: 1px solid rgba(62,62,62,1);
+    position: absolute;
+    margin: 0 33px;
+    }
